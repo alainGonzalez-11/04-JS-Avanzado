@@ -35,3 +35,13 @@ const POSTS = [
     getPost();
  }
  iniciar();
+
+
+ async function fetchStarWars(){
+    const respones = await fetch('https://swapi.dev/api/people/11');
+    const data = respones.json();
+    console.log(data);
+
+ }
+
+ fetchStarWars();
